@@ -1,0 +1,611 @@
+/************************MAIN STYLE**********************************/
+
+* {
+    box-sizing: border-box;
+}
+
+header, footer{
+    background-color: #fafafa;
+}
+
+footer {
+    text-align: center;
+    color: #7f7f7f;
+    padding: 50px 0 20px 0;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-size: 20px;
+    color: darkgray;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+}
+
+.site-title {
+    margin-bottom: 0;
+}
+
+.site-title, .entry-title {
+    text-align: center;
+}
+
+.entry-title {
+    margin-top: 60px
+}
+
+.footer-title {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.hidden-smartphones {
+    display: none;
+}
+
+
+
+
+
+
+/************************HEADER**********************************/
+
+
+
+
+header ul li {
+    line-height: 50px;
+    text-align: center;
+    width: 90%;
+    height: 50px;
+    font-weight: 800;
+/*    font-family: 'open sans', sans-serif;*/
+/*    text-decoration: none;*/
+    background-color: white;
+    color: black;
+    list-style-type: none;
+    margin: 10px auto 0 auto;
+}
+
+header ul li:first-child {
+    margin-top: 0;
+}
+
+header ul{
+    margin: auto;
+    width: 100%;
+    padding: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/************************CONTENT**********************************/
+
+
+
+
+
+
+
+
+
+
+/*********PROFILE SECTION (SUB HEADER)*******/
+
+
+
+.sub-header {
+    width: 100%;
+    background-color: #fAfAfA;
+    padding-bottom: 40px
+}
+
+.profile-section {
+    text-align: center;
+    color: #7f7f7f;
+}
+
+.profile-section img {
+    width: 70%;
+    margin: auto;
+}
+
+.profile-section p {
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    color: darkgray;
+}
+
+
+
+
+
+
+
+/*********SITE FEATURES*******/
+
+
+.site-features {
+    padding: 40px 0;
+}
+
+.site-features p {
+    font-size: 16px;
+}
+
+.site-features p{
+    text-align: center;
+    width: 85%;
+    margin: 25px auto;
+    color: #7f7f7f;
+}
+
+.site-features h3 {
+    text-align: center;
+    width: 85%;
+    margin: 25px auto;
+    font-weight: 300;
+    font-size: 24px
+}
+
+.site-features img {
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/************************FOOTER**********************************/
+
+
+
+
+footer ul {
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+footer div {
+    width: 90%;
+    margin: auto;
+}
+
+#col1 {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+#col2 {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+footer p {
+    margin-bottom: 40px;
+}
+
+
+/*****BOTTOM FOOTER******/
+
+.bottom-footer p {
+    color: black;
+    font-size: 18px;
+}
+
+.bottom-footer {
+    border-top: 1px solid darkgrey;
+    padding-top: 30px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************************************************
+MEDIA QUERY
+****************************************************************************/
+
+
+
+
+
+/************************ FROM 580PX TO 999PX **********************************/
+
+
+@media screen and (min-width: 580px) and (max-width: 999px) {
+    
+    .hidden-smartphones {
+        display: inline;
+        float: left;
+    }
+    
+    .hidden-desktops {
+        display: none;
+    }
+    
+    /************************HEADER**********************************/
+
+
+
+
+    header ul li {
+        background-color: transparent;
+        display: inline;
+        text-align: center;
+        margin-left: 30px;
+
+    }
+    
+    header ul li:first-child {
+        margin-left: 0;
+}
+    
+    header ul {
+        text-align: center;
+    }
+
+
+    
+    
+    
+/************************CONTENT**********************************/
+
+
+
+
+
+/*********PROFILE SECTION*******/
+
+
+    .profile-section img {
+        width: 40%;
+    }
+    
+    .profile-section p {
+        width: 60%;
+        float: left;
+        text-align: left;
+        margin: 0;
+        padding: 0 20px 0 0;
+    }
+
+    .profile-section {
+        width: 90%;
+        margin: auto;
+        
+    }
+
+    
+    
+/*********PORTFOLIO ITEMS*******/
+    
+    .portfolio-items {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .site-features {
+        vertical-align: top;
+        display: inline-block;
+        width: 49%;
+        margin: auto;
+        
+    } 
+    
+    
+    
+/*********BOTTOM FOOTER*******/
+    
+    #col2 ul li {
+        display: inline;
+        margin: auto;
+        margin-left: 20px;
+        color: black;
+    }
+    
+
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+/************************ FROM 1000PX **********************************/
+
+
+
+
+@media screen and (min-width: 1000px) {
+    
+    
+        .hidden-smartphones {
+        display: inline;
+        float: left;
+    }
+    
+    .hidden-desktops {
+        display: none;
+    }
+    
+    /************************HEADER**********************************/
+
+
+
+
+    header ul li {
+        background-color: transparent;
+        display: inline;
+        text-align: center;
+        margin-left: 30px;
+
+    }
+    
+    header ul li:first-child {
+        margin-left: 0;
+}
+    
+    header ul {
+        text-align: center;
+    }
+
+
+    
+    
+    
+/************************CONTENT**********************************/
+
+
+
+
+
+/*********PROFILE SECTION*******/
+
+
+    .profile-section img {
+        width: 40%;
+    }
+    
+    .profile-section p {
+        width: 60%;
+        float: left;
+        text-align: left;
+        margin: 0;
+        padding: 0 20px 0 0;
+    }
+
+    .profile-section {
+        width: 90%;
+        margin: auto;
+        
+    }
+
+    
+    
+/*********PORTFOLIO ITEMS*******/
+    
+    .portfolio-items {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .site-features {
+        vertical-align: top;
+        display: inline-block;
+        width: 33%;
+        margin: auto;
+        
+    } 
+    
+    
+
+/*********BOTTOM FOOTER*******/
+    
+    #col2 ul li {
+        display: inline;
+        margin: auto;
+        margin-left: 20px;
+        color: black;
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
