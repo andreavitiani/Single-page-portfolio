@@ -38,6 +38,8 @@ h6 {
 
 .site-title {
     margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 20px;
 }
 
 .site-title, .entry-title {
@@ -359,10 +361,10 @@ MEDIA QUERY
 
 
 
-/************************ FROM 580PX TO 999PX **********************************/
+/************************ FROM 768PX TO 1023PX **********************************/
 
 
-@media screen and (min-width: 580px) and (max-width: 999px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     
     .hidden-smartphones {
         display: inline;
@@ -468,12 +470,12 @@ MEDIA QUERY
 
 
 
-/************************ FROM 1000PX **********************************/
+/************************ FROM 1024PX **********************************/
 
 
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
     
     
         .hidden-smartphones {
