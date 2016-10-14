@@ -23,6 +23,7 @@ footer {
 a {
     text-decoration: none;
     color: black;
+    font-family: 'Lato', sans-serif;
 }
 
 p {
@@ -30,6 +31,7 @@ p {
     color: darkgray;
     font-weight: 300;
     line-height: 25px;
+    font-family: 'Lato', sans-serif;
 }
 
 h1,
@@ -39,6 +41,7 @@ h4,
 h5,
 h6 {
     color: black;
+    font-family: 'Lato', sans-serif;
 }
 
 .site-title {
@@ -63,6 +66,7 @@ h6 {
 .hidden-smartphones {
     display: none;
 }
+
 
 
 
@@ -156,14 +160,14 @@ header ul{
 
 
 .site-features {
-    padding: 40px 0;
+    background-color: azure;
+    margin: 10px auto;
+    padding: 10px;
 }
 
 .site-features p {
+    padding: 40px 0;
     font-size: 16px;
-}
-
-.site-features p{
     text-align: center;
     width: 85%;
     margin: 25px auto;
@@ -187,8 +191,29 @@ header ul{
 
 
 
+/********************SERVICES SECTION***************************/
+
+.services-wrap {
+    width: 90%;
+    margin: auto;
+}
+
+.services-wrap h2, 
+.services-wrap h3, 
+.services-wrap p {
+    text-align: center;
+}
+
+.services-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
+.services-section img {
+    width: 100%;
+}
 
 
 
@@ -216,17 +241,6 @@ footer div {
     margin: auto;
 }
 
-.col1 {
-    width: 50%;
-    float: left;
-    text-align: left;
-}
-
-.col2 {
-    width: 50%;
-    float: right;
-    text-align: right;
-}
 
 footer p {
     margin-bottom: 40px;
@@ -246,7 +260,19 @@ footer p {
     width: 100%;
 }
 
+.col1 {
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
 
+.col2 {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
 
 
 
@@ -380,6 +406,36 @@ MEDIA QUERY
         display: none;
     }
     
+    [class^="col-"] {
+        float: left;
+        padding:0 1rem;
+    } 
+    
+    .col-1 {
+        width: calc(100% / 12);
+    }
+    .col-2 {
+        width: calc(100% / 12 * 2);
+    }
+
+     .col-3 {
+        width: calc(100% / 12 * 3);
+    }
+
+     .col-4 {
+        width: calc(100% / 12 * 4);
+    }
+
+     .col-5 {
+        width: calc(100% / 12 * 5);
+    }
+
+     .col-6 {
+        width: calc(100% / 12 * 6);
+    }
+    
+    
+    
     /************************HEADER**********************************/
 
 
@@ -416,11 +472,11 @@ MEDIA QUERY
 
     .profile-section img {
         width: 40%;
+        float: right;
     }
     
     .profile-section p {
         width: 60%;
-        float: left;
         text-align: left;
         margin: 0;
         padding: 0 20px 0 0;
@@ -429,7 +485,7 @@ MEDIA QUERY
     .profile-section {
         width: 90%;
         margin: auto;
-        
+        overflow: hidden;
     }
 
     
@@ -445,9 +501,34 @@ MEDIA QUERY
         vertical-align: top;
         display: inline-block;
         width: 49%;
-        margin: auto;
-        
+        margin: 10px auto;
+        min-height: 500px;
     } 
+    
+    
+    
+    
+    
+    
+/********************SERVICES SECTION***************************/
+    
+
+    
+.services-section {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+    
+.services-col1 {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.services-col2 {
+    width: 50%;
+    padding: 0 10px;
+}
+    
     
     
     
@@ -485,7 +566,7 @@ FROM 1024PX
 @media screen and (min-width: 1024px) {
     
     
-        .hidden-smartphones {
+    .hidden-smartphones {
         display: inline;
         float: left;
     }
@@ -530,11 +611,11 @@ FROM 1024PX
 
     .profile-section img {
         width: 40%;
+        float: right;
     }
     
     .profile-section p {
         width: 60%;
-        float: left;
         text-align: left;
         margin: 0;
         padding: 0 20px 0 0;
@@ -543,7 +624,7 @@ FROM 1024PX
     .profile-section {
         width: 90%;
         margin: auto;
-        
+        overflow: hidden;
     }
 
     
@@ -559,9 +640,31 @@ FROM 1024PX
         vertical-align: top;
         display: inline-block;
         width: 33%;
-        margin: auto;
-        
+        margin: 10px auto;
+        min-height: 480px;
     } 
+    
+    
+    
+    
+/********************SERVICES SECTION***************************/
+    
+.services-section {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+    margin: auto;
+}
+    
+.services-col1 {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.services-col2 {
+    width: 50%;
+    padding: 0 10px;
+}
     
     
 
