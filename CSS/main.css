@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
 header, footer{
     background-color: #fafafa;
 }
@@ -211,13 +216,13 @@ footer div {
     margin: auto;
 }
 
-#col1 {
+.col1 {
     width: 50%;
     float: left;
     text-align: left;
 }
 
-#col2 {
+.col2 {
     width: 50%;
     float: right;
     text-align: right;
@@ -448,7 +453,7 @@ MEDIA QUERY
     
 /*********BOTTOM FOOTER*******/
     
-    #col2 ul li {
+    .col2 ul li {
         display: inline;
         margin: auto;
         margin-left: 20px;
@@ -470,7 +475,9 @@ MEDIA QUERY
 
 
 
-/************************ FROM 1024PX **********************************/
+/************************ 
+FROM 1024PX 
+**********************************/
 
 
 
@@ -560,7 +567,7 @@ MEDIA QUERY
 
 /*********BOTTOM FOOTER*******/
     
-    #col2 ul li {
+    .col2 ul li {
         display: inline;
         margin: auto;
         margin-left: 20px;

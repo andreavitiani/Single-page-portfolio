@@ -6,16 +6,17 @@
     <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
     <link rel="stylesheet" type="text/css" href="CSS/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="JS/picturefill.js async"></script>
 </head>
 <body>
     <header>
         <h1 class="site-title">Andrea Vitiani</h1>
-        <ul>
-            <li><a href="#top">HOME</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#top">HOME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
     </header>
     
     <div class="sub-header">
@@ -25,13 +26,13 @@
             </div>
     </div>
     
-    <a name="portfolio"><h2 class="entry-title">PORTFOLIO</h2></a>
+    <a id="portfolio"><h2 class="entry-title">PORTFOLIO</h2></a>
     
     <div class="portfolio-items">
         
         <div class="site-features">    
             <div>
-                <img src="Images/portfolio-1.png">
+                <img src="Images/portfolio-1.png" alt="Marketing">
                 <h3>Marketing Page</h3>
                 <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
             </div>
@@ -39,7 +40,7 @@
 
         <div class="site-features">    
         <div>
-            <img src="Images/portfolio-2.png">
+            <img src="Images/portfolio-2.png" alt="Search">
             <h3>Search Page</h3>
             <p>This project searches through a specific database to find information that the user is trying to look up.</p>
             </div>
@@ -47,7 +48,7 @@
 
         <div class="site-features">    
         <div>
-            <img src="Images/portfolio-3.png">
+            <img src="Images/portfolio-3.png" alt="Portfolio">
             <h3>Travel App</h3>
             <p>This project compares travel times based on different transportation methods and tell you the best one.</p>
             </div>
@@ -55,7 +56,7 @@
 
         <div class="site-features">    
         <div>
-            <img src="Images/portfolio-6.png">
+            <img src="Images/portfolio-6.png" alt="Map">
             <h3>Map Of Favorite Spots</h3>
             <p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
             </div>
@@ -63,7 +64,7 @@
 
         <div class="site-features">    
         <div>
-            <img src="Images/portfolio-5.png">
+            <img src="Images/portfolio-5.png" alt="Photo">
             <h3>Photo Gallery</h3>
             <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
             </div>
@@ -71,7 +72,7 @@
         
         <div class="site-features"> 
             <div>
-            <img src="Images/portfolio-4.png">
+            <img src="Images/portfolio-4.png" alt="Calculator">
             <h3>Calculator</h3>
             <p>Someone can enter in the numbers they want and press the big blue button and get the results.</p>
             </div>
@@ -82,26 +83,26 @@
     
     <footer>
         <div>
-            <a name="contact"><h3 class="footer-title">CONTACT</h3></a>
+            <a id="contact"><h3 class="footer-title">CONTACT</h3></a>
             <p id="fotter-text">If you want make a request or you want some additional information about my works you can contact me and I will ba glad to answer.</p>
             <ul>
                 <li>Phone   <strong>+1 (111) 5556-1234</strong></li>
                 <li>Email   <strong>email@yoursite.com</strong></li>
             </ul>
             <div class="bottom-footer">
-                <span id="col1">
+                <div class="col1">
                     <p><strong>Andrea Vitiani</strong></p>
-                </span>
-                <span id="col2" class="hidden-desktops">
-                    <a href="#top"><p><strong>BACK TO TOP</strong></p></a>
-                </span>
-                <span id="col2" class="hidden-smartphones">
+                </div>
+                <div class="col2 hidden-desktops">
+                    <a href="#top"><strong>BACK TO TOP</strong></a>
+                </div>
+                <div class="col2 hidden-smartphones">
                     <ul>
                         <li><a href="#top">HOME</a></li>
                         <li><a href="#portfolio">PORTFOLIO</a></li>
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
-                </span>
+                </div>
             </div>
         </div>
     </footer>
