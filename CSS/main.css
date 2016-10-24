@@ -335,7 +335,7 @@ MEDIA QUERY
     
     header ul li:first-child {
         margin-left: 0;
-}
+    }
     
     header ul {
         text-align: center;
@@ -396,21 +396,21 @@ MEDIA QUERY
     
 
     
-.services-section {
-    flex-direction: row;
-    justify-content: flex-start;
-}
-    
-.services-col1 {
-    width: 50%;
-    padding: 0 10px;
-}
+    .services-section {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 
-.services-col2 {
-    width: 50%;
-    padding: 0 10px;
-}
-    
+    .services-col1 {
+        width: 50%;
+        padding: 0 10px;
+    }
+
+    .services-col2 {
+        width: 50%;
+        padding: 0 10px;
+    }
+
     
     
     
@@ -456,13 +456,17 @@ HEADER
 **********************************/
 
     
-    header h1 {
-        float: left;
-        line-height: 70px;
-        padding-top: 30px !important;
+    header {
+        height: 100px;
+        overflow: hidden;
     }
-
     
+    .container-header {
+        background-color: #fAfAfA;
+        width: 90%;
+        margin: auto;  
+        height: 100px;
+    }
 
     header ul li {
         background-color: transparent;
@@ -471,16 +475,23 @@ HEADER
         margin-left: 30px;
     }
 
-    
-
     header ul {
         text-align: right;
-        line-height: 70px;
+        height: 100px;
     }
 
+   .site-title {
+        float: left;
+        line-height: 100px;
+        padding: 0;
+    }
+    
+    nav {
+        height: 100px;  
+    }
 
     
-    
+
     
 /************************
 CONTENT
@@ -504,6 +515,7 @@ CONTENT
     }
 
     .profile-section {
+        padding-top: 30px;
         width: 90%;
         margin: auto;
         overflow: hidden;
@@ -531,22 +543,22 @@ CONTENT
     
 /********************SERVICES SECTION***************************/
     
-.services-section {
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 90%;
-    margin: auto;
-}
-    
-.services-col1 {
-    width: 50%;
-    padding: 0 10px;
-}
+    .services-section {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 90%;
+        margin: auto;
+    }
 
-.services-col2 {
-    width: 50%;
-    padding: 0 10px;
-}
+    .services-col1 {
+        width: 50%;
+        padding: 0 10px;
+    }
+
+    .services-col2 {
+        width: 50%;
+        padding: 0 10px;
+    }
     
     
 
